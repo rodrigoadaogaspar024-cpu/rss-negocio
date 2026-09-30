@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RSS Negócio</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+header p {
+  margin: 8px 0 0;
+}
+
+nav {
+  background: #222;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 8px;
+  font-weight: bold;
+}
+
+.banner {
+  background: white;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.banner h2 {
+  margin-top: 0;
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 20px;
+}
+
+.categoria {
+  background: white;
+  padding: 25px 10px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px #ccc;
+}
+
+.publicar {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #111;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+</style>
+</head>
+<script src="script.js"></script>
+
+
+
+
+<body>
+
+<header>
+  <h1>RSS Negócio</h1>
+  <p>Troque, anuncie e encontre novos negócios</p>
+</header>
+
+<nav>
+  <a href="#">Início</a>
+  <a href="#categorias">Categorias</a>
+  <a href="#publicar">Publicar</a>
+</nav>
+
+<section class="banner">
+  <h2>🔄 Faça sua troca</h2>
+  <p>Encontre produtos, veículos, imóveis e muito mais.</p>
+</section>
+
+<h2 style="text-align:center;">Categorias</h2>
+
+<section class="categorias" id="categorias">
+
+  <div class="categoria">🚗 Carros</div>
+
+  <div class="categoria">🏠 Casas</div>
+
+  <div class="categoria">👕 Roupas</div>
+
+  <div class="categoria">👟 Tênis</div>
+
+  <div class="categoria">🎮 Jogos</div>
+
+  <div class="categoria">📚 Livros</div>
+
+</section>
+
+<section class="publicar" id="publicar">
+
+  <h2>📢 Publicar anúncio</h2>
+
+  <label>Nome do produto</label>
+  <input type="text" placeholder="Ex: Carro, casa, tênis...">
+
+  <label>Categoria</label>
+  <select>
+    <option>Carros</option>
+    <option>Casas</option>
+    <option>Roupas</option>
+    <option>Tênis</option>
+    <option>Jogos</option>
+    <option>Livros</option>
+  </select>
+
+ <label>Descrição</label>
+<textarea rows="5" placeholder="Descreva o produto que deseja trocar..."></textarea>
+
+<label>Foto do produto</label>
+<input type="file" id="fotoProduto2" accept="image/*">
+
+<img id="previewFoto2"
+     style="display:none; max-width:300px; margin-top:10px;">
+<button type="button" id="publicarBtn" onclick="publicarAnuncio()">
+    PUBLICAR
+</button>
+
+</section>
+</section>
+
+<footer>
+  <p>© 2026 RSS Negócio</p>
+  <p>Trocas e negócios de todos os tipos</p>
+</footer>
+<div style="text-align:center; margin:25px 0;">
+  <h2>🛍️ Oferta da Temu</h2>
+  <p>Confira esta oferta especial!</p>
+
+  <a href="https://temu.to/k/eyh817bz21g"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-block;
+            padding:14px 25px;
+            background:#ff6b00;
+            color:white;
+            text-decoration:none;
+            border-radius:10px;
+            font-weight:bold;
+            font-size:18px;">
+    🛒 COMPRAR NA TEMU
+  </a>
+</div>
+  </script>
+
+</body>
+</html>
